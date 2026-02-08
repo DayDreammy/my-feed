@@ -13,12 +13,18 @@
         .feeds ul { padding-left: 20px; }
         .feeds li { margin: 5px 0; color: #666; }
         .report-list { background: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .report-item { padding: 15px; border-bottom: 1px solid #eee; }
+        .report-item:last-child { border-bottom: none; }
+        .date { color: #666; font-size: 14px; }
+        .title { color: #2196F3; text-decoration: none; font-size: 18px; font-weight: bold; }
+        .title:hover { text-decoration: underline; }
+        .format { color: #999; font-size: 12px; margin-left: 10px; }
         .footer { margin-top: 40px; text-align: center; color: #999; }
     </style>
 </head>
 <body>
     <h1>📰 My Feed</h1>
-    <p class="subtitle">每日精选 RSS 聚合日报 | 每天 18:00 更新</p>
+    <p class="subtitle">每日精选 RSS 聚合日报</p>
     
     <div class="feeds">
         <h3>📡 订阅源</h3>
@@ -33,7 +39,12 @@
     
     <div class="report-list">
         <h2>📅 历史日报</h2>
-        <p>日报将在此处显示...</p>
+        
+        <div class="report-item">
+            <div class="date">2026年02月08日</div>
+            <a class="title" href="reports/20260208.html">2026年02月08日</a>
+            <span class="format"><a href="reports/20260208.md">[MD]</a> | <a href="reports/20260208.html">[HTML]</a></span>
+        </div>
     </div>
     
     <div class="footer">
